@@ -1,0 +1,194 @@
+body{
+    background-color: black;
+}
+.Principio{
+display: grid;
+grid-template-columns: 15% 65%;
+
+grid-template-rows: 100%;
+height: 300px;
+gap: 20px;
+
+
+}
+.especifico{
+    display: grid;
+    grid-template-rows: 12% 20% 18% 18% 18%;
+
+    gap: 10px;
+    margin-left: 40px;
+    height: 87%;
+    margin-top: 2%;
+justify-content: space-between;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: white;
+    margin-left: 50px;
+}
+.lista{
+    color: white;
+    font-size: 20px;
+    margin-top: 35px;
+    
+}
+.NombrePlaylist{
+    color: rgb(204, 146, 156);
+    font-size: 70px;
+}
+
+.foto{
+    width: 260px;
+    margin: auto;
+    margin-left: 10px;
+    height: 260px;
+    border-radius: 50%;
+   
+}
+.descripcion{
+    color: white;
+    font-size: 20px;
+    margin-top: 60px;
+    margin-left: 9px;
+}
+.numero{
+    color: white;
+    font-size: 13px;
+    margin-top: 60px;
+}
+.tiempo{
+    color: white;
+    font-size: 13px;
+}
+
+.search-bar {
+    position: relative;
+ 
+  }
+  
+  .search-bar .icon {
+    position: absolute;
+    top: 47%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: white;
+    padding-bottom: 25px;
+  }
+  
+  .search-bar .input-text {
+    width: 100%;
+    border: 0px;
+    background-color: #fff;
+    height: 20px;
+    padding: 8px 8px 8px 35px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    border: white;
+    background-color: black;
+   
+  }
+  .search-bar .input-text:focus {
+    width: 80%;
+    background-color: #ccc;
+  }
+
+.lineaderepro{
+    color: white;
+    border: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    display: grid;
+    grid-template-columns: 130px 300px 900px;
+    
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-top: 7px;
+    width: 100%;
+   height: 50px;
+  
+}
+.repro{
+    box-sizing: content-box;
+    color: black;
+    background-color: rgb(204, 146, 156);
+    border-radius: 10px 10px 10px 10px;
+   
+    margin: 0 auto;
+    width: 150px;
+    height: 30px;
+    padding-top: 7px;
+    text-align: center;
+    font-size: 23px; 
+}
+.iconos{
+    display: grid;
+    grid-template-columns: 5% 5% 5% 5%;
+    gap: 15px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.referencias{
+    display: grid;
+    grid-template-columns: 9% 24% 24% 24% 9%;
+    gap: 5px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: white;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 60px;
+    margin-top: 10px;
+    margin: 0 auto;
+    
+}
+
+.corazon{
+    color: white;
+    margin: 0 auto;
+    
+}
+.titulo{
+    color: white;
+    
+
+
+}
+.artista{
+    color: white;
+   
+    
+}
+.album{
+    color: white;
+    
+}
+.clock{
+    padding-top: 8px;
+}
+.a{
+    color: white;
+    display: grid;
+    grid-template-columns: 9% 24% 24% 24% 9%;
+    gap: 5px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: white;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 30px;
+   
+    
+    margin: 0 auto;
+    
+    padding-bottom: 19px;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+.heart{
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.a:hover{
+    background-color: rgba(240, 196, 203, 0.5); 
+}
+
+
+
+
