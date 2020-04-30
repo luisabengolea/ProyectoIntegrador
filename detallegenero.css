@@ -1,0 +1,84 @@
+.playlists {
+    
+    
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% ;
+    justify-content: space-between;
+    margin-top: 100px;
+    align-items: center;
+    
+
+    
+   
+}
+
+.artistasreggae {
+    
+   
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-around;
+    margin-top: 100px;
+    align-items: center;
+   
+}
+.ftartistas{
+    border-radius: 50%;
+   
+   
+}
+
+h3{
+    color: bisque;
+    margin-top: 100px;
+    font-size: 30px;
+    font-family: "Baloo Bhaina 2"
+}
+
+.lanzamientos{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-around;
+    margin-top: 100px;
+    align-items: center;
+
+}
+   
+    
+
+h1{ 
+    color: white;
+    font-size: 55px;
+    margin-top: 100px;
+    font-family: "Baloo Bhaina 2";
+    text-decoration: underline;
+
+}
+
+body{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 5% 5%  80%;
+    justify-content: space-between;
+}
+
+p{
+ color: white;
+ font-family: "Baloo Bhaina 2";
+ font-size: 15px;
+}
+h2{
+    color: white;
+    font-size: 30px;
+    font-family: "Baloo Bhaina 2"
+    
+}
+
+
+
+h4{
+    color: white;
+    font-size: 30px;
+    margin-top: 100px;
+    font-family: "Baloo Bhaina 2"
+}

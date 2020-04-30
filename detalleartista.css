@@ -1,0 +1,67 @@
+.artista{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 75%; 
+justify-content: space-between;
+  
+    margin-top: 200px;
+
+}
+.ariana{
+    border-radius: 50%;
+}
+body{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 5% 5%  80%;
+    justify-content: space-between;
+}
+
+
+
+
+h1{
+    color: white;
+    margin-top: 100px;
+    margin-left: 33px;
+    font-size: 20px;
+    text-decoration: underline;
+
+}
+.SONGLIST{
+    color: white;
+    width: 100%;
+}
+h2{ 
+    color: white;
+    margin-left: 33px;
+    text-decoration: underline;
+    
+}
+
+h3{
+    color: white;
+    margin-left: 33px;
+}
+
+li{
+    color: white;
+    margin-top: 60px;
+    
+}
+h4{
+    color: white;
+    margin-top: 143px;
+    font-size: 35px;
+   margin-left: 15px;
+}
+
+.numsep{
+    margin-left: 5px;
+
+}
+
+
+.icono1{
+    color: white;
+}
