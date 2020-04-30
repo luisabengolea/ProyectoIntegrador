@@ -3,8 +3,7 @@ body{
     display: grid;
     grid-template-columns: 10% 80%;
     justify-content: space-between;
-
-    
+    font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .columnas{
@@ -116,6 +115,7 @@ padding-left: 60px;
     margin-top: 5px;
 justify-content: space-between;
     font-family: 'PT Sans Narrow', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
     margin-left: 35px;
     
@@ -123,7 +123,7 @@ justify-content: space-between;
 .lista{
     color: white;
     font-size: 20px;
-    margin-top: 35px;
+    margin-top: 45px;
     
     
 }
@@ -132,7 +132,8 @@ justify-content: space-between;
 }
 .NombrePlaylist{
     color: rgb(204, 146, 156);
-    font-size: 70px;
+    font-size: 60px;
+    margin-left: 9px;
 }
 
 .foto{
@@ -153,8 +154,9 @@ justify-content: space-between;
 .descripcion{
     color: white;
     font-size: 20px;
-    margin-top: 60px;
-    margin-left: 9px;
+    margin-top: 40px;
+    
+    margin-left: 17px;
 }
 .numero{
     color: white;
@@ -202,6 +204,7 @@ justify-content: space-between;
 .lineaderepro{
 
     font-family: 'PT Sans Narrow', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: grid;
     grid-template-columns: 130px 300px 900px;
     
@@ -223,7 +226,7 @@ justify-content: space-between;
     height: 30px;
     padding-top: 7px;
     text-align: center;
-    font-size: 23px; 
+    font-size: 20px; 
 }
 .iconos{
     color: white;
@@ -240,6 +243,7 @@ justify-content: space-between;
     grid-template-columns: 9% 24% 24% 24% 9%;
     gap: 5px;
     font-family: 'PT Sans Narrow', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
     margin: 0 auto;
     justify-content: space-between;
@@ -278,6 +282,7 @@ justify-content: space-between;
     grid-template-columns: 9% 24% 24% 24% 9%;
     gap: 5px;
     font-family: 'PT Sans Narrow', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
     margin: 0 auto;
     justify-content: space-between;
@@ -334,7 +339,7 @@ justify-content: space-between;
     
     .Principio{
         grid-template-columns: none;
-        grid-template-rows: 2px 150px 170px;
+        grid-template-rows: 2px 138px 170px;
         
         height: 300px;
 
@@ -354,13 +359,12 @@ justify-content: space-between;
     }
     .especifico{
     display: grid;
-    grid-template-rows: 55px 20px 20px 10px;
+    grid-template-rows: 45px 43px 20px 5px;
     gap: 0px;
     margin: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
-    margin-left: 10px;
-    font-family: 'PT Sans Narrow', sans-serif;
+    margin-left: 5px; 
     width: 100%;
     padding-left: 0px;
      }
@@ -390,7 +394,7 @@ justify-content: space-between;
   }
    
 .NombrePlaylist{
-    font-size: 41px;
+    font-size: 35px;
     margin-top: 0px;
     margin-left: 0px;
     padding-left: 0px;
@@ -405,7 +409,7 @@ justify-content: space-between;
 .descripcion{
     color: white;
     font-size: 16px;
-    
+
     margin-top: 0px;
     margin-left: 0px;
     margin: 0px
@@ -424,7 +428,7 @@ justify-content: space-between;
 }
 .lineaderepro{
     color: white;
-    font-family: 'PT Sans Narrow', sans-serif;
+    
     display: grid;
     grid-template-columns: 0px;
     grid-template-rows:  35px 30px;
@@ -473,7 +477,7 @@ justify-content: space-between;
     grid-template-columns: 20px 140px 140px;
     gap: 10px;
     width: 305px;
-    font-family: 'PT Sans Narrow', sans-serif;
+    
     color: white;
     font-size: 14px;
     margin: 0 auto;
