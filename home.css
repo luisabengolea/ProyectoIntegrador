@@ -31,6 +31,8 @@ main{
     margin-top: 2px;
     height: 100vh;
 }
+
+
 .titulo{
     display: grid;
     grid-template-columns: 18% 80%;
@@ -102,7 +104,41 @@ main{
 .secciones:hover{
     background-color: rgba(240,196,203,0.5)
 }
-.buscador{
+
+
+.buscador {
+    position: relative;
+    width: 95%;
+ 
+  }
+  
+  .buscador .icon {
+    position: absolute;
+    top: 47%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: white;
+    padding-bottom: 25px;
+  }
+  
+  .buscador .input-text {
+    width: 93%;
+    border: 0px;
+    background-color: #fff;
+    height: 20px;
+    padding: 8px 8px 8px 35px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    border: white;
+    background-color: rgba(40,41,41,0.7);
+    border: 1px solid rgba(255, 255, 255, 0.3)
+   
+  }
+  .buscador .input-text:focus {
+    width: 80%;
+    background-color: #ccc;
+  }
+  .buscador{
     display: grid;
     grid-template-columns: 2% 90% 2% 2%;
     justify-content: space-around;
@@ -111,13 +147,14 @@ main{
     margin-right: 15px;
     margin-top: 5px;
     border: 0.5px solid white;
-    height: 30px;
+    height: 40px;
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
     color: white;
     
 }
+
 .usuario{
     margin-top: 5px;
 }
@@ -151,3 +188,14 @@ main{
   
     
 }
+.imagenplaylist{
+        width: 260px;
+        margin: auto;
+        margin-left: 0px;
+        height: 260px;
+        border-radius: 50%;
+}
+.textoslides{
+    color: black;
+}
+
