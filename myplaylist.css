@@ -1,7 +1,7 @@
 body{
     background-color: black;
     display: grid;
-    grid-template-columns: 10% 80%;
+    grid-template-columns: 22% 80%;
     justify-content: space-between;
     font-family: 'PT Sans Narrow', sans-serif;
 }
@@ -15,22 +15,23 @@ body{
 aside{
     background-color:black;
     margin-top: 5px;
-    height: 96vh;
-    margin-left: 0px;
+    height: 1024px;
+    margin-left: 0 auto;
     position: fixed;
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    border: 1px solid white;
+    padding-right: 30px;
    
 }
 .logo{
     margin-left: 0px;
     color: rgb(204, 146, 156);
-    padding-top: 20px;
-    margin-left: 8px;
+    padding-top: 15px;
+    margin-left: 5px;
 }
 .titulo{
     display: grid;
     grid-template-columns: 18% 80%;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 40px;
     padding-top: 15px;
     margin-left: 15px;
@@ -43,9 +44,10 @@ aside{
 .titulo2{
     display: grid;
     grid-template-columns: 18% 80%;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 40px;
     padding-top: 15px;
+    padding-left: 20px;
     margin-bottom: 10px;
     text-align: center;
    color: white;
@@ -54,33 +56,37 @@ aside{
 .publicidad{
     font-size: 15px;
    
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     padding-left: 15px;
+    padding-top: 20px;
     padding-right: 20px;
-    margin-left: 15px;
-    margin-right: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
     text-align: inherit;
     color: white;
     border: 1px solid white;
     border-radius: 10%;
     width: 150px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color:rgba(255, 191, 216, 0.856);
+    background-color:rgba(240,196,203,0.9);
     color: black;
     border: 1px solid white;
     border-radius: 10%;
 }
 .secciones{
     margin-top: 15px;
+    margin-left: 20px;
     display: grid;
     grid-template-columns: 10% 85%;
     justify-content: space-between;
-    margin-left: 25px;
     font-size: 18px;
     color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
+.secciones:hover{background-color:rgba(240,196,203,0.5);}
 .seccion{
     margin-left: 15px;
 }
