@@ -1,3 +1,8 @@
+html{
+    background-color: transparent;
+    background-color: black;
+}
+
 body{
     background-color: black;
     background-attachment: scroll;
@@ -161,14 +166,5 @@ main{
     border-bottom: 2px solid  rgb(255, 200, 234);
     
 }
-.imagenplaylist{
-        width: 260px;
-        margin: auto;
-        margin-left: 0px;
-        height: 260px;
-        border-radius: 50%;
-}
-.textoslides{
-    color: black;
-}
+
 
