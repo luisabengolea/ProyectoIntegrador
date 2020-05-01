@@ -218,7 +218,12 @@ aside{
     border-bottom: 2px solid white;
     
 }
-
+.topcan:hover{
+    border: 4px solid rgba(255, 191, 216, 0.856);
+}
+.imgprinc:hover{
+    border: 4px solid pink;
+}
 @media (max-width: 420px){
     .aside{
         display: none;
@@ -232,6 +237,7 @@ aside{
     margin-left: 360px;
     margin-top: 22px;
 }
+
  
 .titariana{
     color: rgba(255, 191, 216, 0.856);
