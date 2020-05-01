@@ -1,7 +1,7 @@
 body{
     background-color: black;
     display: grid;
-    grid-template-columns: 22% 80%;
+    grid-template-columns: 22% 76%;
     justify-content: space-between;
     font-family: 'PT Sans Narrow', sans-serif;
 }
@@ -123,7 +123,7 @@ aside{
 }
 .Principio{
 display: grid;
-grid-template-columns: 15% 65%;
+grid-template-columns: 20% 65%;
 
 grid-template-rows: 100%;
 height: 300px;
@@ -142,7 +142,8 @@ justify-content: space-between;
     font-family: 'PT Sans Narrow', sans-serif;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
-    margin-left: 35px;
+    margin-left: 27px;
+    
     
 }
 .lista{
@@ -336,8 +337,11 @@ justify-content: space-between;
 }
 
 
-@media (max-width: 320px){
+@media (max-width: 450px){
    .aside{
+       display: none;
+   }
+   .columnas{
        display: none;
    }
    .iconomob{
@@ -353,7 +357,7 @@ justify-content: space-between;
     border-radius: 10px 10px 10px 10px;
     background-color: rosybrown;
        height: 25px;
-       margin-left: 270px;
+       margin-left: 350px;
  
    }
    .fondo{
@@ -365,19 +369,20 @@ justify-content: space-between;
     .Principio{
         grid-template-columns: none;
         grid-template-rows: 2px 138px 170px;
-        
+        width: 450px;
         height: 300px;
 
     }
      
     .imagen{
         margin-top: 0px;
+        margin-left: 50px;
     }
     .foto{
-        width: 300px;
+        width: 320px;
         margin: auto;
-        margin-left: 10px;
-        height: 300px;
+        margin-left: 20px;
+        height: 320px;
         border-radius: 50%;
         margin-top: 40px;
         
@@ -397,7 +402,7 @@ justify-content: space-between;
     display: none;
 }
 .search-bar .input-text {
-    width: 250px;
+    width: 350px;
     border: 0px;
     background-color: #fff;
     height: 10px;
@@ -419,7 +424,7 @@ justify-content: space-between;
   }
    
 .NombrePlaylist{
-    font-size: 35px;
+    font-size: 45px;
     margin-top: 0px;
     margin-left: 0px;
     padding-left: 0px;
@@ -433,21 +438,22 @@ justify-content: space-between;
 }
 .descripcion{
     color: white;
-    font-size: 16px;
-
-    margin-top: 0px;
+    font-size: 15px;
+ padding-top: 6px;
+ padding-left: 5px;
+    margin-top: 10px;
     margin-left: 0px;
     margin: 0px
 }
 .numero{
     font-size: 12px;
     margin-left: 0px;
-    margin-top: 12px; 
+    margin-top: 0px; 
    
 
 }
 .tiempo{
-    margin-top: 11px;
+    margin-top: 4px;
     font-size: 12px;
     margin-left: 0px;
 }
@@ -471,14 +477,14 @@ justify-content: space-between;
     background-color: rgb(204, 146, 156);
     border-radius: 10px 10px 10px 10px;
     margin: 0 auto;
-    width: 250px;
+    width: 270px;
     margin: 0 auto;
     height: 30px;
     padding-top: 0px;
     text-align: center;
-    font-size: 20px; 
+    font-size: 23px; 
     margin-top: 0px;
-    margin-left: 30px;
+    margin-left: 65px;
 }
 
 .iconos{
@@ -487,7 +493,7 @@ justify-content: space-between;
     gap: 15px;
     height: 0px;
     margin-top: 3px;
-    margin-left: 95px;
+    margin-left: 150px;
     
 }
 
@@ -501,16 +507,16 @@ justify-content: space-between;
     display: grid;
     grid-template-columns: 20px 140px 140px;
     gap: 10px;
-    width: 305px;
-    
+    width: 410px;
+    margin-top: 4px;
     color: white;
     font-size: 12px;
-    margin: 0 auto;
+    margin: 0px;
     justify-content: space-between;
-    height: 20px;
-    margin: 0 auto;
+    height: 25px;
+    margin: 0px;
      padding-bottom: 23px;
-     
+     padding-top: 1px;
      border: none;
      border-top: 1px solid rgba(255, 255, 255, 0.3);
      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
