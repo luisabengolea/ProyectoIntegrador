@@ -383,6 +383,9 @@ margin-top: 10px;
         border-radius: 50%;
         
     }
+    .casita{
+        color: white;
+    }
     .iconomob{
         background-color: rosybrown;
         border-radius: 10px 10px 10px 10px;
@@ -394,13 +397,14 @@ margin-top: 10px;
          padding-left: 5px;
          width: 25px;
       border-radius: 10px 10px 10px 10px;
-      background-color: rosybrown;
+      
          height: 25px;
          margin-left: 270px;
    
      }
      .fondo{
         display: block;
+        color: white;
     }
     .especifico{
         display: grid;
