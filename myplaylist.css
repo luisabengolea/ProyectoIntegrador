@@ -536,6 +536,9 @@ header{
 body{
     grid-template-columns: none;
 }
+.casita{
+    color: white;
+}
 }
 
 
