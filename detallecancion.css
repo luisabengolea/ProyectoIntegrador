@@ -1,7 +1,7 @@
 body{
     background-color: black;
     display: grid;
-    grid-template-columns: 12% 80%;
+    grid-template-columns: 22% 80%;
     justify-content: space-between;
     font-family: 'PT Sans Narrow', sans-serif;
 }
@@ -51,6 +51,7 @@ aside{
     margin-bottom: 10px;
     text-align: center;
    color: white;
+   padding-right: 20px;
 }
 
 .publicidad{
