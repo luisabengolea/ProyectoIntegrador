@@ -7,8 +7,9 @@ body{
     background-color: black;
     display: grid;
     grid-template-columns: 22% 80%;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: 'PT Sans Narrow', sans-serif;
+    margin-left: 2px;
 }
 
 
@@ -19,10 +20,11 @@ aside{
     background-color:black;
     margin-top: 5px;
     height: 1024px;
-    margin-left: 0 auto;
+    margin-left: 5px;
     position: fixed;
     border: 1px solid white;
     padding-right: 30px;
+    border-left: 1px solid white;
    
 }
 .logo{
