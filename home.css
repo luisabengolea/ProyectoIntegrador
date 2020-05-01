@@ -11,6 +11,29 @@ body{
     font-family: 'PT Sans Narrow', sans-serif;
     margin-left: 2px;
 }
+footer {
+    background-color: rgb(204, 146, 156);
+    margin-top: 40px;
+  }
+footer.ul  {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0;
+    padding: 10px;
+  }
+li.footer a {
+    text-decoration: none;
+  }
+  li.footer{
+    list-style-type: none; 
+    color: black;
+    padding-top: 10px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .logofooter{
+    width: 30px ;
+  }
 
 
 .icono{
