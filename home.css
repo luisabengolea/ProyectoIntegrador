@@ -39,7 +39,7 @@ aside{
     justify-content: space-between;
     font-size: 40px;
     padding-top: 15px;
-    margin-left: 15px;
+    margin-left: 10px;
     margin-bottom: 60px;
     text-align: center;
     color: rgb(204, 146, 156);
@@ -184,7 +184,7 @@ aside{
     border: 0.5px solid white;
     height: 30px;
     padding: 5px;
-    padding-left: 10px;
+    padding-left: 30px;
     padding-top: 10px;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -225,6 +225,14 @@ h3.textoslide{
    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    font-size: 20px;
 }
+h3.textoslide2{
+    color: white;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 30px;
+   text-decoration: underline overline white;
+   text-emphasis: emphasis;
+}
+
 .imagencancion{
     filter: grayscale(100%);
 }
