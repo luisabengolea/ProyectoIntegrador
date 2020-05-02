@@ -310,6 +310,10 @@ img{
 img{
     filter: grayscale(100%);
 }
+.casita{
+    display: none;
+    margin-left: 0px;
+}
  
 
 @media (max-width: 450px){
@@ -448,10 +452,6 @@ img{
 
     
       
-
-      .buscadors{
-          display: none;
-      }
       .casita{
         color: white;
         margin-left: 420px;
@@ -461,7 +461,7 @@ img{
     }
 
     footer{
-        width: 450px;
+        width: 500px;
         margin: 0;
         text-align: none;
     }
@@ -494,3 +494,5 @@ li.footer a {
     width: 30px ;
    
   }
+
+
