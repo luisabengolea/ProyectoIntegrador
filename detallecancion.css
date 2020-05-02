@@ -1,7 +1,7 @@
 body{
     background-color: black;
     display: grid;
-    grid-template-columns: 22% 79%;
+    grid-template-columns: 20% 80%;
     justify-content: space-between;
     font-family: 'PT Sans Narrow', sans-serif;
 }
