@@ -305,8 +305,10 @@ img{
         width: 100%;
     }
     .artistasreggae{
-        
-        margin-left: 120px;
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: 42% 42%;
+        margin-left: 0px;
         width: 100%;
     }
 
