@@ -253,7 +253,12 @@ img{
         display: grid none;
        
     }
-    
+    .playlists{
+        display: grid;
+        grid-template-columns: 42% 42%;
+        justify-content: space-around;
+        margin-left: 0px;
+    }
     
    .aside{
        display: none;
@@ -306,7 +311,7 @@ img{
     }
 
     .playlists{
-        margin-left: 120px;
+        margin-left: 0px;
         width: 100%;
     }
     .ftartistas{
@@ -322,7 +327,8 @@ img{
     }
 
     .titprinc{
-        margin-left: 125px;
+        margin-left: 90px;
+        margin-top: 20px;
     }
 
     .titplay{
