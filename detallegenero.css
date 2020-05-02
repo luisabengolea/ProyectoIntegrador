@@ -238,3 +238,140 @@ img{
    
 
 }
+
+
+
+@media (max-width: 450px){
+    .aside{
+        display: none;
+    }
+    
+    
+    body{
+        display: grid none;
+       
+    }
+    
+    
+   .aside{
+       display: none;
+   }
+   
+
+    
+
+    header{
+        display: none;
+    }
+   
+        
+    body{
+        grid-template-columns: none;
+    }
+     
+
+    
+
+    .lanzamientos{
+        margin-left: 120px;
+        width: 100%;
+    }
+    .artistasreggae{
+        
+        margin-left: 120px;
+        width: 100%;
+    }
+
+    .playlists{
+        margin-left: 120px;
+        width: 100%;
+    }
+    .ftartistas{
+        margin-top: 35px;
+    }
+    .ftlanza{
+        margin-top: 35px;
+    }
+
+    .ftplaylist{
+        margin-top: 35px;
+        
+    }
+
+    .titprinc{
+        margin-left: 125px;
+    }
+
+    .titplay{
+        margin-left: 145px;
+    }
+
+    .titart{
+        margin-left: 135px;
+        align-items: center;
+        margin-top: 90px;
+    }
+
+    .titlanz{
+        margin-left: 110px;
+    }
+    .subtitulo{
+        width: 90%;
+        margin-left: 50px;
+    }
+    main{
+       width: 100%;
+    }
+
+    Div.buscador{
+       display: none;
+    }
+    .usuario{
+        display: none;
+    }
+
+    .input-text{
+        display: none;
+    }
+ body{
+     display: grid none;
+ }
+ .casita{
+    color: white;
+    margin-left: 400px;
+}
+footer{
+    width: 450px;
+    margin: 0;
+    text-align: none;
+}
+li.footer{
+    padding-right: 20px;
+}
+}
+
+footer {
+    background-color: rgb(204, 146, 156);
+    margin-top: 40px;
+    
+  }
+footer.ul  {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0;
+    padding: 10px;
+  }
+li.footer a {
+    text-decoration: none;
+  }
+  li.footer{
+    list-style-type: none; 
+    color: black;
+    padding-top: 10px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .logofooter{
+    width: 30px ;
+   
+  }
