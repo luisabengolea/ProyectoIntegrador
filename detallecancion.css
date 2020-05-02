@@ -1,7 +1,7 @@
 body{
     background-color: black;
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 22% 88%;
     justify-content: space-between;
     font-family: 'PT Sans Narrow', sans-serif;
 }
@@ -44,7 +44,7 @@ aside{
     margin-left: 0 auto;
     position: fixed;
     border: 1px solid white;
-    padding-right: 30px;
+    padding-right: 60px;
    
 }
 .logo{
@@ -199,7 +199,8 @@ margin-top: 10px;
 }
 .search-bar {
     position: relative;
-    width: 700px;
+    width: 450px;
+    
  
   }
   
@@ -213,9 +214,9 @@ margin-top: 10px;
   }
   
   .search-bar .input-text {
-    width: 93%;
+    width: 60%;
     border: 0px;
-    background-color: #fff;
+    background-color:rgb(204, 146, 156);
     height: 20px;
     padding: 8px 8px 8px 35px;
     -webkit-transition: width 0.4s ease-in-out;
@@ -227,7 +228,7 @@ margin-top: 10px;
   }
   .search-bar .input-text:focus {
     width: 80%;
-    background-color: #ccc;
+    background-color: rgba(204, 146, 156,0.8);
   }
 
 .lineaderepro{
