@@ -240,7 +240,9 @@ img{
 }
 
 
-
+.casita{
+    display: none;
+}
 @media (max-width: 450px){
     .aside{
         display: none;
@@ -268,8 +270,29 @@ img{
     body{
         grid-template-columns: none;
     }
-     
 
+    .subtitulo{
+        margin-top: 80px;
+    }
+     
+     .casita{
+    
+            background-color: rosybrown;
+            border-radius: 10px 10px 10px 10px;
+              display: block;
+             color: white;
+             margin: 0 auto;
+             position: fixed;
+             padding-top: 5px;
+             padding-left: 5px;
+             width: 25px;
+          border-radius: 10px 10px 10px 10px;
+          background-color: rosybrown;
+             height: 25px;
+             margin-left: 350px;
+       
+         }
+     
     
 
     .lanzamientos{
@@ -337,9 +360,24 @@ img{
      display: grid none;
  }
  .casita{
-    color: white;
-    margin-left: 400px;
-}
+         color: white;
+         margin-right:400px;
+         background-color: rosybrown;
+         border-radius: 10px 10px 10px 10px;
+         display: block;
+         color: white;
+         margin-top: 40px;
+         position: absolute;
+         padding-top: 5px;
+         padding-left: 5px;
+         width: 25px;
+         border-radius: 10px 10px 10px 10px;
+         background-color: rosybrown;
+         height: 25px;
+         margin-right: 350px;
+   
+     }
+
 footer{
     width: 450px;
     margin: 0;
