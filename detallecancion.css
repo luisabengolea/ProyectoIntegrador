@@ -28,6 +28,7 @@ li.footer a {
   }
   .logofooter{
     width: 30px ;
+    
   }
   
 .columnas{
@@ -588,5 +589,14 @@ margin-top: 10px;
     p.mayer{
         margin-left: 27px;
         padding-top: 9px;
+    }
+    footer{
+        width: 400px;
+        margin: 0;
+        text-align: none;
+    }
+    li.footer{
+        padding-right: 20px;
+    }
     }
 }
