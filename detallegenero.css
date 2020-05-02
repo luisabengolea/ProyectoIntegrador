@@ -4,7 +4,7 @@ body{
 }
 header{
     display: grid;
-    grid-template-columns: 19% 80%;
+    grid-template-columns: 20% 80%;
     grid-template-rows: 500px 100px;
     justify-content: space-around;
    

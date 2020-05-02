@@ -1,7 +1,7 @@
 body{
     background-color: black;
     display: grid;
-    grid-template-columns: 22% 76%;
+    grid-template-columns: 20% 80%;
     justify-content: space-between;
     font-family: 'PT Sans Narrow', sans-serif;
 }
@@ -571,6 +571,14 @@ body{
 }
 .casita{
     color: white;
+}
+footer{
+    width: 400px;
+    margin: 0;
+    text-align: none;
+}
+li.footer{
+    padding-right: 20px;
 }
 }
 

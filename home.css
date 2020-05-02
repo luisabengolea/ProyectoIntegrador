@@ -393,4 +393,13 @@ h3.textoslide2{
         height: 140px;
         border-radius: 50%;
     }
+    footer{
+        width: 400px;
+        margin: 0;
+        text-align: none;
+    }
+    li.footer{
+        padding-right: 20px;
+    }
+    
 }
