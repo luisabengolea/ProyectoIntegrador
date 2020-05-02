@@ -291,7 +291,7 @@ h3.textoslide2{
     .option:hover aside{display: block;}
 
     .secciones2{
-        margin-top: 8px;
+        margin-top: 10px;
         margin-left: 20px;
         margin-right: 20px;
         display: grid;
@@ -376,7 +376,7 @@ h3.textoslide2{
     .subtitulo{
        
        
-        margin-top: 40px;
+        margin-top: 20px;
         font-size: 10px;
         margin-bottom: 30px;
         height: 10px;
