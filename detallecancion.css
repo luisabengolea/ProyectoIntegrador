@@ -7,7 +7,9 @@ body{
 }
 footer {
     background-color: rgb(204, 146, 156);
+    
   }
+  
 footer.ul  {
     display: grid;
     grid-template-columns: auto auto auto;

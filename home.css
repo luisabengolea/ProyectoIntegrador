@@ -14,6 +14,7 @@ body{
 footer {
     background-color: rgb(204, 146, 156);
     margin-top: 40px;
+    
   }
 footer.ul  {
     display: grid;
