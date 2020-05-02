@@ -312,6 +312,13 @@ img{
         width: 100%;
     }
 
+    .lanzamientos{
+        display: grid;
+        grid-template-columns: 42% 42%;
+        justify-content: space-around;
+        margin: 0px;
+        margin-bottom: 30px;
+    }
     .playlists{
         margin-left: 0px;
         width: 100%;
