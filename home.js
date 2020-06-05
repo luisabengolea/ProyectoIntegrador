@@ -102,13 +102,12 @@ window.addEventListener("load",function() {
                 let genreName = cadaGenero.name;
                 let genreId = cadaGenero.id;
 
-                let htmlNuevoGenero = `
-                    
+                let htmlNuevoGenero = `                     
             <li>
                 <div class="slide">
                   <a href="detallegenero.html?iddeGeneros=` + genreId +`">
                   <img src="`+ genreImg + `" alt="">
-                  <div class="uk-position-center uk-panel "><h3 class="textoslide2">REGGAETON</h3></div>
+                  <div class="uk-position-center uk-panel "><h3 class="textoslide2">` + genreName + `</h3></div>
                   </a>
                 </div>
             </li>
