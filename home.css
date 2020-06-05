@@ -228,6 +228,7 @@ aside{
 }
 .slide{
     color: black;
+    filter: grayscale(100%);
 }
 .slide:hover{
     border: 4px solid rgba(255, 191, 216, 0.856);
