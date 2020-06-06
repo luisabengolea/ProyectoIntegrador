@@ -26,7 +26,7 @@ window.addEventListener("load",function() {
              <li>
                 <div class="slide">
                     <a href="detalleartista.html?idDeArtista= ` + artistId + ` ">
-                     <img src="` + artistImg + `" alt="">
+                     <img class="imgslide" src="` + artistImg + `" alt="">
                      <div class="uk-position-bottom-center uk-panel"><h3 class="textoslide">` + artistName + `</h3></div>
                   </a>
                 </div>
@@ -66,7 +66,7 @@ window.addEventListener("load",function() {
             <li>
                 <div class="slide">
                   <a href="detallecancion.html?iddeTrack=` + trackId + `">
-                  <img class="imagencancion" src="` + trackImg + `" alt=" "></a>
+                  <img class="imagencancion imgslide" src="` + trackImg + `" alt=" "></a>
                   <div class="uk-position-bottom-center uk-panel"><h3 class="textoslide">` + trackTitle + `</h3></div>
                 </div>
             </li>
@@ -106,7 +106,7 @@ window.addEventListener("load",function() {
             <li>
                 <div class="slide">
                   <a href="detallegenero.html?iddeGeneros=` + genreId +`">
-                  <img src="`+ genreImg + `" alt="">
+                  <img class="imgslide" src="`+ genreImg + `" alt="">
                   <div class="uk-position-center uk-panel "><h3 class="textoslide2">` + genreName + `</h3></div>
                   </a>
                 </div>
