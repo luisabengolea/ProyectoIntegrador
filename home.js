@@ -61,13 +61,16 @@ window.addEventListener("load",function() {
                 let trackImg = cadaTrack.album.cover_big;
                 let trackTitle = cadaTrack.title;
                 let trackId = cadaTrack.id;
+                let trackArtist = cadaTrack.artist.name
 
                 let htmlNuevoTrack = `
             <li>
                 <div class="slide">
-                  <a href="detallecancion.html?idDeTrack=` + trackId + `">
-                  <img class="imagencancion" src="` + trackImg + `" alt=" "></a>
-                  <div class="uk-position-bottom-center uk-panel"><h3 class="textoslide">` + trackTitle + `</h3></div>
+                    <a href="detallecancion.html?idDeTrack=` + trackId + `">
+                    <div>
+                        <img class="imagencancion" src="` + trackImg + `" alt=" "></a>
+                        <div class="uk-position-bottom-center uk-panel"><h3 class="textoslide">` + trackTitle + `-` + trackArtist +  `</h3></div>
+                    </div>
                 </div>
             </li>
                     `
