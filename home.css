@@ -150,7 +150,7 @@ aside{
     position: relative;
     width: 95%;
      display: grid;
-     grid-template-columns: 2% 90% 2% 2%;
+     grid-template-columns:  80% 2% 2%;
      justify-content: space-around;
      background-color: rgba(40,41,41,0.7);
      margin-left: 20px;
@@ -162,6 +162,18 @@ aside{
      padding-left: 10px;
      padding-right: 10px;
      color: white;
+     }
+
+     .formbuscador{
+         display: grid;
+         grid-template-columns: 5% 90%;
+         justify-content: space-around;
+     }
+
+     .botonbuscador{
+         background-color:rgba(40,41,41,0.7);
+         border: 1px solid rgba(255, 255, 255, 0.3);
+         color: white;
      }
   
   .buscador .icon {
