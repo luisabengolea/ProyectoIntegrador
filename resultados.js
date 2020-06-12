@@ -25,7 +25,7 @@ window.addEventListener("load",function(){
             const cadaResultado = resultado[index];
             
             let trackTitle = cadaResultado.title
-            let nombreArtista = cadaResultado.artist.name
+            let trackArtist = cadaResultado.artist.name
             let nombreAlbum = cadaresultado.album.title
             let trackImg = cadaResultado.album.cover_medium
             let duracion = cadaResultado.duration
@@ -40,7 +40,7 @@ window.addEventListener("load",function(){
             </div>
         </li>
         `
-        document.querySelector(".buscar").innerHTML += htmlResultado
+        document.querySelector(".listadoResultados").innerHTML += htmlResultado
             
             
            
