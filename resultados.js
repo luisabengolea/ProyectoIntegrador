@@ -31,9 +31,10 @@ window.addEventListener("load",function(){
             let duracion = cadaResultado.duration
             let trackID = cadaResultado.index
 
-            let resultadoBusqueda = `
+            let htmlResultado = `
             
         `
+        document.querySelector(".buscar").innerHTML += htmlResultado
             
             
            
