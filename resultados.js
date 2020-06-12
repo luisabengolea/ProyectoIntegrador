@@ -24,15 +24,21 @@ window.addEventListener("load",function(){
         for (let index = 0; index < 1; index++) {
             const cadaResultado = resultado[index];
             
-            let nombreTrack = cadaResultado.title
+            let trackTitle = cadaResultado.title
             let nombreArtista = cadaResultado.artist.name
             let nombreAlbum = cadaresultado.album.title
-            let fotoTrack = cadaResultado.album.cover_medium
+            let trackImg = cadaResultado.album.cover_medium
             let duracion = cadaResultado.duration
-            let trackID = cadaResultado.index
+            let trackId = cadaResultado.index
 
             let htmlResultado = `
-            
+            <li>
+            <div class="slide">
+              <a href="detallecancion.html?iddeTrack=` + trackId + `">
+              <img class="imagencancion imgslide" src="` + trackImg + `" alt=" "></a>
+              <div class="uk-position-bottom-center uk-panel"><h3 class="textoslide">` + trackTitle + `</h3></div>
+            </div>
+        </li>
         `
         document.querySelector(".buscar").innerHTML += htmlResultado
             
