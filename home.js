@@ -26,7 +26,7 @@ window.addEventListener("load",function() {
              <li>
                 <div class="slide">
                     <a href="detalleartista.html?idDeArtista= ` + artistId + ` ">
-                     <img src="` + artistImg + `" alt="">
+                     <img class="imgslide" src="` + artistImg + `" alt="">
                      <div class="uk-position-bottom-center uk-panel"><h3 class="textoslide">` + artistName + `</h3></div>
                   </a>
                 </div>
@@ -65,8 +65,13 @@ window.addEventListener("load",function() {
                 let htmlNuevoTrack = `
             <li>
                 <div class="slide">
+<<<<<<< HEAD
                   <a href="detallecancion.html?idDeTrack=` + trackId + `">
                   <img class="imagencancion" src="` + trackImg + `" alt=" "></a>
+=======
+                  <a href="detallecancion.html?iddeTrack=` + trackId + `">
+                  <img class="imagencancion imgslide" src="` + trackImg + `" alt=" "></a>
+>>>>>>> c86373da9e0c085fe5cdfe6f811996668c71256a
                   <div class="uk-position-bottom-center uk-panel"><h3 class="textoslide">` + trackTitle + `</h3></div>
                 </div>
             </li>
@@ -102,13 +107,12 @@ window.addEventListener("load",function() {
                 let genreName = cadaGenero.name;
                 let genreId = cadaGenero.id;
 
-                let htmlNuevoGenero = `
-                    
+                let htmlNuevoGenero = `                     
             <li>
                 <div class="slide">
                   <a href="detallegenero.html?iddeGeneros=` + genreId +`">
-                  <img src="`+ genreImg + `" alt="">
-                  <div class="uk-position-center uk-panel "><h3 class="textoslide2">REGGAETON</h3></div>
+                  <img class="imgslide" src="`+ genreImg + `" alt="">
+                  <div class="uk-position-center uk-panel "><h3 class="textoslide2">` + genreName + `</h3></div>
                   </a>
                 </div>
             </li>
