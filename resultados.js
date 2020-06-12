@@ -14,20 +14,18 @@ window.addEventListener("load",function(){
     .then(
         function (resultado){
 
-            resultado = resultado.data
+            resultadoBusqueda = resultado.data
          console.log(resultado)
 
-         if (gifsPopulares.length == 0) {
-            alert("No hay resultados");
-        }
+        
 
-        for (let index = 0; index < 1; index++) {
-            const cadaResultado = resultado[index];
+        for (let index = 0; index < resultadoBusqueda.length; index++) {
+            const cadaResultado = resultadoBusqueda[index];
             
             let trackTitle = cadaResultado.title
             let trackArtist = cadaResultado.artist.name
-            let nombreAlbum = cadaresultado.album.title
-            let trackImg = cadaResultado.album.cover_medium
+            let trackAlbum = cadaResultado.album.title
+            trackImg = cadaResultado.album.cover_medium
             let duracion = cadaResultado.duration
             let trackId = cadaResultado.index
 
