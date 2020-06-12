@@ -104,6 +104,18 @@ main{
     color: white;
     
 }
+
+.formbuscador{
+    display: grid;
+    grid-template-columns: 5% 90%;
+    justify-content: space-around;
+}
+
+.botonbuscador{
+    background-color:rgba(40,41,41,0.7);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
 .usuario{
     margin-top: 5px;
 }
