@@ -25,7 +25,7 @@ window.addEventListener("load",function() {
                 let htmlNuevoArtista = `
              <li>
                 <div class="slide">
-                    <a href="detalleartista.html?idDeArtista= ` + artistId + ` ">
+                    <a href="detalleartista.html?idDeArtista=` + artistId + ` ">
                      <img class="imgslide" src="` + artistImg + `" alt="">
                      <div class="uk-position-bottom-center uk-panel"><h3 class="textoslide">` + artistName + `</h3></div>
                   </a>

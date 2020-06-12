@@ -15,10 +15,10 @@ window.addEventListener ("load", function(){
     let artistaDetalle = information;
     console.log (information)
    
-    let nombreArtista = artistaDetalle.artist.name;
-    let numeroDeFans = artistaDetalle.nb_fan;
-    let numeroAlbums = artistaDetalle.artist.nb_album;
-    let fotoArtista = artistaDetalle.artist.picture_big;
+    let nombreArtista = artistaDetalle.name;
+    let numeroDeFans = artistaDetalle.nb_fan + " " + "fans";
+    let numeroAlbums = "Numero de albums:" + " " + artistaDetalle.nb_album;
+    let fotoArtista = artistaDetalle.picture_big;
 
     let nuevoTituloArtista = `
     <h1> ` + nombreArtista + ` </h1>`
@@ -26,9 +26,59 @@ window.addEventListener ("load", function(){
 
     let fans = ` <h4> ` + numeroDeFans + ` </h4>`
     document.querySelector (".tiempo").innerHTML += fans
+
+    let artistaAlbumsNumero = `
+    <h4 class="numerosAlbums"> ` + numeroAlbums + ` </h4>
+    `
+    document.querySelector (".numerosAlbums").innerHTML += artistaAlbumsNumero
     
+    let perfilArtista =
+    ` <img class="img"  src=" ` + fotoArtista + ` " alt=""> `
+    document.querySelector (".img").innerHTML += perfilArtista
+    } )
+    
+    fetch ("https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/" + codigoArtista + "/top?limit=50" )
+    .then(
+        function (respuesta){
+            return respuesta.json();
+        }
+    )
+    .then(
+        function(informacionTracks) {
+            
+        let porCancion = informacionTracks.data
+        console.log(informacionTracks)
+       // Trabaja el resultado  y armar variables con los reusltados para tenerlos almacenados 
+
+    for (let i = 0; i < porCancion.length; i ++){
+        const cadaCancion = porCancion[i];
+        
+        let tituloCancion = cadaCancion.title;
+        let artistaCancion = cadaCancion.artist.name;
+        let albumCancion = cadaCancion.album.title;
+        let tiempoCancion = cadaCancion.duration + " " + "mins";
+
+        let htmlCanciones = `
+        <li>
+            <div class="a">
+                <p class="heart"><i class="fa fa-heart"></i></p>
+                <p class="song"> ` + tituloCancion + ` </p> 
+                <p class="artist"> ` + artistaCancion + ` </p>
+                <p class="albums"> ` + albumCancion + ` </p>
+                <p class="minutos"> ` + tiempoCancion + ` </p>
+       
+             </div>
+        </li>
+            `
+     
+        document.querySelector(".items").innerHTML += htmlCanciones
+       
+    }
+
+
 
     })
+
 
 
     })
