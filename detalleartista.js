@@ -9,4 +9,26 @@ window.addEventListener ("load", function(){
         }
     )
 //respuesta
+.then(
+    function (information) {
+
+    let artistaDetalle = information;
+    console.log (information)
+   
+    let nombreArtista = artistaDetalle.artist.name;
+    let numeroDeFans = artistaDetalle.nb_fan;
+    let numeroAlbums = artistaDetalle.artist.nb_album;
+    let fotoArtista = artistaDetalle.artist.picture_big;
+
+    let nuevoTituloArtista = `
+    <h1> ` + nombreArtista + ` </h1>`
+    document.querySelector (".tituloartista").innerHTML += nuevoTituloArtista
+
+    let fans = ` <h4> ` + numeroDeFans + ` </h4>`
+    document.querySelector (".tiempo").innerHTML += fans
+    
+
+    })
+
+
     })
