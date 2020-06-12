@@ -65,13 +65,8 @@ window.addEventListener("load",function() {
                 let htmlNuevoTrack = `
             <li>
                 <div class="slide">
-<<<<<<< HEAD
-                  <a href="detallecancion.html?idDeTrack=` + trackId + `">
-                  <img class="imagencancion" src="` + trackImg + `" alt=" "></a>
-=======
                   <a href="detallecancion.html?iddeTrack=` + trackId + `">
                   <img class="imagencancion imgslide" src="` + trackImg + `" alt=" "></a>
->>>>>>> c86373da9e0c085fe5cdfe6f811996668c71256a
                   <div class="uk-position-bottom-center uk-panel"><h3 class="textoslide">` + trackTitle + `</h3></div>
                 </div>
             </li>

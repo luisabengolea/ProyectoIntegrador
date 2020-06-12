@@ -313,13 +313,14 @@ margin-top: 10px;
     color: white;
     border: 1px solid rgba(240,196,203,0.5);
    height: 50px;
+  margin-bottom: 10px;
    
 }
 .heart{
  margin-left: 15px;
 }
 .song{
-    margin-bottom: 0px;
+    padding-bottom: 20px;
 }
 
 

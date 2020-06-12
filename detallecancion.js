@@ -1,6 +1,6 @@
 window.addEventListener ("load", function(){
     let queryString = new URLSearchParams (location.search)
-    let codigoCancion = queryString.get ("idDeTrack")
+    let codigoCancion = queryString.get ("iddeTrack")
 //conecto con el URL de deezer
     fetch ("https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/" + codigoCancion )
     .then(
