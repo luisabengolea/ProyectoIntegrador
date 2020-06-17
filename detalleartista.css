@@ -183,7 +183,7 @@ margin-top: 10px;
 .tituloartista{
     color: rgb(204, 146, 156);
     font-size: 20px;
-    margin-left: 9px;
+    margin-left: 40px;
     margin-top: 10px;
 }
 
@@ -543,20 +543,24 @@ margin-top: 10px;
         padding: 5px;
         
     }
+
+    .tituloartista{
+        margin-left: 80px;
+    }
     .referencias{
         display: none;
     }
     .numerosAlbums{
         margin-top: 3px;
         margin-bottom: 3px;
-        margin-left: 15px;
+        margin-left: 50px;
         font-size: 15px;
     }
 
    .fans{
     margin-top: 3px;
     margin-bottom: 3px;
-    margin-left: 25px;
+    margin-left: 130px;
     font-size: 15px;
     
    }
