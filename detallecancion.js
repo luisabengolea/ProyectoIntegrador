@@ -17,9 +17,9 @@ window.addEventListener ("load", function(){
 
  // creo las variables para reemplazar en c/ cancion
        let nombreCancion = laCancion.title;
-       let artistaCancion = laCancion.artist.name;
-       let albumCancion = laCancion.album.title;
-       let imagenCancion = laCancion.album.cover_big
+       let artistaCancion = laCancion.name;
+       let albumCancion = laCancion.title;
+       let imagenCancion = laCancion.cover_big
        let añoCancion = laCancion.release_date
        let tiempoCancion = laCancion.duration
    
