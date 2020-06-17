@@ -6,7 +6,7 @@ html{
 body{
     background-color: black;
     display: grid;
-    grid-template-columns: 22% 80%;
+    grid-template-columns: 22% 77%;
     justify-content: space-between;
     font-family: 'PT Sans Narrow', sans-serif;
     margin-left: 2px;

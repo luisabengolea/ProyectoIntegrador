@@ -6,7 +6,7 @@ html{
 body{
     background-color: black;
     display: grid;
-    grid-template-columns: 22% 80%;
+    grid-template-columns: 22% 77%;
     justify-content: space-between;
     font-family: 'PT Sans Narrow', sans-serif;
     margin-left: 2px;}
@@ -279,7 +279,9 @@ li.footer a {
   .logofooter{
     width: 30px ;
   }
-
+  .fondo{
+    display: none;
+}
   
 @media (max-width: 450px){
     
@@ -426,6 +428,42 @@ li.footer a {
     }
     li.footer{
         padding-right: 20px;
+    }
+    .personales2{
+        display: none;
+    }
+    .p2{
+        display: none;
+    }
+
+    .option{
+        display: none;
+    }
+    .casita{
+        color: white;
+    }
+
+    .iconomob{
+        background-color: rosybrown;
+        border-radius: 10px 10px 10px 10px;
+          display: block;
+         color: white;
+         margin-top: 10px;
+         position: absolute;
+         padding-top: 5px;
+         padding-left: 5px;
+         width: 25px;
+      border-radius: 10px 10px 10px 10px;
+      
+         height: 25px;
+         margin-left: 350px;
+   
+     }
+     .fondo{
+        display: block;
+        padding-bottom: 30px;
+        color: white;
+        
     }
     
 }

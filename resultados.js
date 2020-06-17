@@ -29,7 +29,7 @@ window.addEventListener("load",function(){
             let trackAlbum = cadaResultado.album.title
             trackImg = cadaResultado.album.cover_big
             let duracion = cadaResultado.duration
-            let trackId = cadaResultado.index
+            let trackId = cadaResultado.id
 
             let htmlResultado = `
             <li>
