@@ -21,7 +21,7 @@ window.addEventListener ("load", function(){
        let albumCancion = laCancion.title;
        let imagenCancion = laCancion.album.cover_big
        let añoCancion = laCancion.release_date
-       let tiempoCancion = laCancion.duration + " " + "minutos"
+       let tiempoCancion = laCancion.duration + " " + "segundos"
    
 // reemplazo variables en las etiquetas HTML
      let nuevoTitulo = ` 
