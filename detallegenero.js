@@ -15,23 +15,26 @@ window.addEventListener("load",function(){
          
          function(informacionGeneros) {
             
-            let porGeneros = informacionGeneros.data
+            let porGeneros = informacionGeneros
             console.log(informacionGeneros)
          
 
-         for (let i = 0; i < porGeneros.length; i ++){
-            const cadaGenero = porGeneros[i];
-            
-            let genreImg = cadaGenero.picture_big;
-            let genreName = cadaGenero.name;
-            let genreId = cadaGenero.id;
+            let genreImg = porGeneros.picture_big;
+            let genreName = porGeneros.name;
+            let genreId = porGeneros.id;
 
             let htmlNuevoGenero = `                     
             <h1> ` + genreName + ` </h1>
             `
 
             document.querySelector(".categoriacancion").innerHTML += htmlNuevoGenero
-            }
+
+            let htmlDelGenero= `
+            <h1> ` + genreName + ` </h1>
+            <img class="img"  src=" ` + genreImg + ` " alt="">  
+            `
+            document.querySelector (".listadoGeneros").innerHTML += htmlDelGenero
+            
         
              }  )
 
