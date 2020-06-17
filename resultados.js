@@ -34,7 +34,7 @@ window.addEventListener("load",function(){
             let htmlResultado = `
             <li>
             <div class="slide">
-              <a href="detallecancion.html?iddeTrack=` + trackId + `">
+              <a href="detallecancion.html?idDeTrack=` + trackId + `">
               <img class="imagencancion imgslide" src="` + trackImg + `" alt=" "></a>
               <div class="uk-position-bottom-center uk-panel"><h3 class="textoslide">` + trackTitle + `-` + trackArtist +  `</h3></div>
             </div>
