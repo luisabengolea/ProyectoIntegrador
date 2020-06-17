@@ -299,11 +299,46 @@ h3.textoslide2{
     text-decoration: underline overline rgba(204, 146, 156,0.856);;
 }
 
-
+.iconomob{
+    display: none;
+}
+.fondo{
+    display: none;
+}
 @media (max-width: 450px){
     
+   
+    .casita{
+        color: white;
+    }
 
+    .iconomob{
+        background-color: rosybrown;
+        border-radius: 10px 10px 10px 10px;
+          display: block;
+         color: white;
+         margin-top: 10px;
+         position: absolute;
+         padding-top: 5px;
+         padding-left: 5px;
+         width: 25px;
+      border-radius: 10px 10px 10px 10px;
+      
+         height: 25px;
+         margin-left: 350px;
+   
+     }
+     .fondo{
+        display: block;
+        padding-bottom: 30px;
+        color: white;
+        
+    }
 
+    .arriba{
+        margin-bottom: 10px;
+        margin-top: 50px;
+    }
     aside{
         display: none;
     }
@@ -363,39 +398,45 @@ h3.textoslide2{
     
     }
     
-    .buscador {
+    .buscador .input-text:focus {
+        width: 40%;
+       
+      }
+
+      .buscador {
+        position: relative;
         width: 90%;
-         grid-template-columns: 2% 86% 3% 3%;
-         margin-right: 0px;
-         margin-left: 8px;
+         display: grid;
+         grid-template-columns:  70% 2% 2%;
+         justify-content: space-around;
+         background-color: rgba(40,41,41,0.7);
+         margin-left: 20px;
+         margin-right: 20px;
          margin-top: 5px;
+         border: 0.5px solid white;
          height: 40px;
          padding: 5px;
          padding-left: 10px;
-         padding-right: 15px;
+         padding-right: 10px;
+         color: white;
          }
-      
-      
-      
-      .buscador .input-text {
-          margin-right: 20px;
-          margin-left: 20px;
-        width: 70%;
-        border: 0px;
-        height: 20px;
-        padding: 8px 8px 8px 35px;
-      
-       
-      }
-      .buscador .input-text:focus {
-        width: 50%;
-       
-      }
+
+         .botonbuscador{
+            background-color:rgba(40,41,41,0.7);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+
+        .formbuscador{
+            
+            grid-template-columns: 15% 70%;
+            
+        }
     
     .usuario{
         margin-top: 5px;
         margin-left: 0px;
-        padding-left: 2px;
+        padding-left: 0px;
         padding-right: 2px;
         margin-right: 5px;
         padding:5px;

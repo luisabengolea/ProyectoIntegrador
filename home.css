@@ -119,6 +119,7 @@ aside{
 .secciones:hover{background-color:rgba(240,196,203,0.5);}
 .seccion{
     margin-left: 15px;
+    
 }
 .seccion a{
     text-decoration: none;
@@ -143,6 +144,10 @@ aside{
 .aside{
     width: 15%;
 
+}
+
+.icono2{
+    color: white;
 }
 
 
@@ -347,39 +352,49 @@ h3.textoslide2{
     
     }
     
-    .buscador {
+    .buscador .input-text:focus {
+        width: 40%;
+       
+      }
+
+      .buscador {
+        position: relative;
         width: 90%;
-         grid-template-columns: 2% 86% 3% 3%;
-         margin-right: 0px;
-         margin-left: 8px;
+         display: grid;
+         grid-template-columns:  70% 2% 2%;
+         justify-content: space-around;
+         background-color: rgba(40,41,41,0.7);
+         margin-left: 20px;
+         margin-right: 20px;
          margin-top: 5px;
+         border: 0.5px solid white;
          height: 40px;
          padding: 5px;
          padding-left: 10px;
-         padding-right: 15px;
+         padding-right: 10px;
+         color: white;
          }
-      
-      
-      
-      .buscador .input-text {
-          margin-right: 20px;
-          margin-left: 20px;
-        width: 70%;
-        border: 0px;
-        height: 20px;
-        padding: 8px 8px 8px 35px;
-      
-       
-      }
-      .buscador .input-text:focus {
-        width: 50%;
-       
-      }
+
+         .botonbuscador{
+            background-color:rgba(40,41,41,0.7);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+
+        .formbuscador{
+            
+            grid-template-columns: 15% 70%;
+            
+        }
+        .buscadortexto{
+            display: grid;
+            grid-gap: 10% 80%;
+        }
     
     .usuario{
         margin-top: 5px;
         margin-left: 0px;
-        padding-left: 2px;
+        padding-left: 0px;
         padding-right: 2px;
         margin-right: 5px;
         padding:5px;
