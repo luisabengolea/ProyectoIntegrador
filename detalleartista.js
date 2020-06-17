@@ -56,7 +56,7 @@ window.addEventListener ("load", function(){
         let tituloCancion = cadaCancion.title;
         let artistaCancion = cadaCancion.artist.name;
         let albumCancion = cadaCancion.album.title;
-        let tiempoCancion = cadaCancion.duration + " " + "mins";
+        let tiempoCancion = cadaCancion.duration + " " + "segs";
 
         let htmlCanciones = `
         <li>
