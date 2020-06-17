@@ -117,6 +117,7 @@ window.addEventListener("load",function() {
                 
                     `
                 
+                
                 document.querySelector(".listadoGeneros").innerHTML += htmlNuevoGenero
             }
             //elijo que parte del html quiero reemplazar 
