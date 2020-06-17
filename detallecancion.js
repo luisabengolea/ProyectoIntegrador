@@ -1,6 +1,6 @@
 window.addEventListener ("load", function(){
     let queryString = new URLSearchParams (location.search)
-    let codigoCancion = queryString.get ("iddeTrack")
+    let codigoCancion = queryString.get ("idDeTrack")
 //conecto con el URL de deezer
     fetch ("https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/" + codigoCancion )
     .then(
@@ -17,11 +17,11 @@ window.addEventListener ("load", function(){
 
  // creo las variables para reemplazar en c/ cancion
        let nombreCancion = laCancion.title;
-       let artistaCancion = laCancion.name;
+       let artistaCancion = laCancion.artist.name;
        let albumCancion = laCancion.title;
-       let imagenCancion = laCancion.cover_big
+       let imagenCancion = laCancion.album.cover_big
        let añoCancion = laCancion.release_date
-       let tiempoCancion = laCancion.duration
+       let tiempoCancion = laCancion.duration + " " + "minutos"
    
 // reemplazo variables en las etiquetas HTML
      let nuevoTitulo = ` 
@@ -57,4 +57,4 @@ window.addEventListener ("load", function(){
            
         }
     )
- })
+    })

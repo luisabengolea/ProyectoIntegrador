@@ -12,11 +12,11 @@ window.addEventListener("load",function(){
     )
 
     .then(
-        function (resultado){
-
-        let generoCancion = resultado
-         console.log(resultado)
-
+         
+         function(informacionGeneros) {
+            
+            let porGeneros = informacionGeneros.data
+            console.log(informacionGeneros)
          
 
          for (let i = 0; i < porGeneros.length; i ++){
@@ -27,28 +27,13 @@ window.addEventListener("load",function(){
             let genreId = cadaGenero.id;
 
             let htmlNuevoGenero = `                     
-        <li>
-            <div class="slide">
-              <a href="detallegenero.html?iddeGeneros=` + genreId +`">
-              <img class="imgslide" src="`+ genreImg + `" alt="">
-              <div class="uk-position-center uk-panel "><h3 class="textoslide2">` + genreName + `</h3></div>
-              </a>
-            </div>
-        </li>
-            
-                `
-            
-            
-            document.querySelector(".listadoGeneros").innerHTML += htmlNuevoGenero
-        }
-                
-            
-            document.querySelector(".listadoGeneros").innerHTML += htmlNuevoGenero
+            <h1> ` + genreName + ` </h1>
+            `
+
+            document.querySelector(".categoriacancion").innerHTML += htmlNuevoGenero
+            }
         
+             }  )
 
-    
-
-       
-        }  
-    )
+        
 })
