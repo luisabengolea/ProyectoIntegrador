@@ -348,7 +348,10 @@ justify-content: space-between;
 }
 .heart{
     margin: 0 auto;
-    padding-top: 15px;
+    background-color:rgba(40,41,41,0.7);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    
 }
 
 .a:hover{
