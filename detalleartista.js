@@ -25,7 +25,7 @@ window.addEventListener ("load", function(){
     document.querySelector (".tituloartista").innerHTML += nuevoTituloArtista
 
     let fans = ` <h4> ` + numeroDeFans + ` </h4>`
-    document.querySelector (".tiempo").innerHTML += fans
+    document.querySelector (".fans").innerHTML += fans
 
     let artistaAlbumsNumero = `
     <h4 class="numerosAlbums"> ` + numeroAlbums + ` </h4>
