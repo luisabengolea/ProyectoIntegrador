@@ -54,6 +54,9 @@ window.addEventListener ("load", function(){
 
     document.querySelector (".img").innerHTML += imagenDeLaCancion
 
+    let imagenDeCancion = `  <img src=" ` + imagenCancion + ` " alt=""> `
+    document.querySelector (".mayer").innerHTML += imagenDeCancion
+
            
         }
     )
