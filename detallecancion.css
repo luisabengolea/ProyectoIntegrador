@@ -708,5 +708,8 @@ p.album{
     .reproductor{
         width: 200px;
     }
+    .albums{
+        display: none;
+    }
     
 }
