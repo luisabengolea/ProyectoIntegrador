@@ -22,6 +22,7 @@ window.addEventListener ("load", function(){
        let imagenCancion = laCancion.album.cover_big
        let añoCancion = laCancion.release_date
        let tiempoCancion = laCancion.duration + " " + "segundos"
+       
    
 // reemplazo variables en las etiquetas HTML
      let nuevoTitulo = ` 
@@ -59,7 +60,8 @@ window.addEventListener ("load", function(){
      <p class="mayer">  ` + artistaCancion + ` </p> ` 
     document.querySelector (".creditos").innerHTML += imagenDeCancion
 
-           
+     
+       
         }
     )
 
