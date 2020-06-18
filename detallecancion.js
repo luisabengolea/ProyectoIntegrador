@@ -47,7 +47,7 @@ window.addEventListener ("load", function(){
     let album = `<p> ` + albumCancion + ` <p> `
     document.querySelector (".albums").innerHTML += album
 
-    let tiempo = ` <p> ` + tiempoCancion + ` </p> `
+    let tiempo = ` <p> ` + tiempoCancion +  ` </p> `
 
     document.querySelector (".minutos").innerHTML += tiempo
 
@@ -72,8 +72,8 @@ window.addEventListener ("load", function(){
         if (localStorage.getItem("cancionesPreferidas") != null) {
 
             //arrayDeCancionesFavoritas y le voy a agregar el código la cancion
-            arrayDecancionesFavoritas = localStorage.getItem("cancionesPreferidas").split(",")
-            arrayDecancionesFavoritas.push(codigoCancion)
+            arrayDeCancionesFavoritas = localStorage.getItem("cancionesPreferidas").split(",")
+            arrayDeCancionesFavoritas.push(codigoCancion)
         } else {
             //TENGO QUE CREAR UN ARRAY NUEVO CON EL CODIGO DE la cancion
             arrayDeCancionesFavoritas = []
@@ -82,5 +82,5 @@ window.addEventListener ("load", function(){
         
         localStorage.setItem("cancionesPreferidas", arrayDeCancionesFavoritas);
     })
-    
-    })
+})
+})

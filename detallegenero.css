@@ -294,6 +294,14 @@ h3.textoslide2{
 .option{
     display: none;
 }
+.reproductor{
+    margin-bottom: 15px;
+    margin-right: 10px;
+    filter: grayscale(100%);
+    position: sticky;
+    bottom: 0px;
+  
+}
 .especial{
     color: rgba(204, 146, 156,0.856);
     text-decoration: underline overline rgba(204, 146, 156,0.856);;
@@ -432,14 +440,7 @@ h3.textoslide2{
             grid-template-columns: 15% 80%;
             
         }
-        .reproductor{
-            margin-bottom: 15px;
-            margin-right: 10px;
-            filter: grayscale(100%);
-            position: sticky;
-            bottom: 0px;
-          
-        }
+        
     
     .usuario{
         margin-top: 5px;
