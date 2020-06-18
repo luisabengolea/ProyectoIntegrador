@@ -45,7 +45,8 @@ window.addEventListener ("load", function(){
     let artista = ` <p> ` + artistaCancion + ` </p> `
     document.querySelector (".artist").innerHTML += artista
 
-    
+    let album = `<p> ` + albumCancion + ` <p> `
+    document.querySelector (".albums").innerHTML += album
 
     let tiempo = ` <p> ` + tiempoCancion +  ` </p> `
 
