@@ -1,6 +1,7 @@
 window.addEventListener("load", function() {
 
 
+
     // Chequeo si hay canciones favoritas en storage
 
     if(localStorage.getItem("cancionesPreferidas") != null) {
@@ -19,12 +20,14 @@ window.addEventListener("load", function() {
             fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/" + cancionesPreferidas[i] + "" )
             .then(
                 function(respuesta) {
-                    return respuesta.json();            
+                    return respuesta.json();   
+                           
                 }
             )
             .then(
                 function(resultado) {
-                    // Acá es donde trabajamos la info 
+                    // Acá es donde trabajamos la info
+                    console.log (resultado)   
                 
                     let laCancion = resultado;
 
