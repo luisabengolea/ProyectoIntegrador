@@ -391,6 +391,14 @@ margin-top: 10px;
     color: white;
     padding-bottom: 25px;
   }
+  .reproductor{
+    margin-bottom: 15px;
+    margin-right: 10px;
+    filter: grayscale(100%);
+    position: sticky;
+    bottom: 0px;
+  
+}
   
   .buscador .input-text {
     width: 93%;
@@ -491,14 +499,7 @@ margin-top: 10px;
         padding-left: 0px;
         margin: none;
      }
-     .reproductor{
-        margin-bottom: 15px;
-        margin-right: 10px;
-        filter: grayscale(100%);
-        position: sticky;
-        bottom: 0px;
-      
-    }
+     
     .año{
         font-size: 15px;
     margin-left: 0px;
