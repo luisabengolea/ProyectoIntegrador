@@ -61,5 +61,26 @@ window.addEventListener("load", function() {
     } else {    
         alert("Todavia no tienes canciones favoritas en tu playlist")
     }
+
+    fetch ("https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/" + codigoCancion )
+    .then(
+        function (respuesta) {
+            return respuesta.json ();
+        }
+    )
+
+    .then(
+        function(resultado){
+            console.log(resultado)
+
+            let HTMLReproductor = 
+            `<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=false&width=950&height=350&
+            color=f0c4cb&layout=dark&size=medium&type=tracks&id=` + codigoCancion + `&app_id=1"
+            width="1108" height="90"></iframe>`
+
+            document.querySelector(".reproductor").innerHTML = HTMLReproductor
+        }
+
+    )
 })
     
