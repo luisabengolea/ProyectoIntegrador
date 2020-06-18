@@ -339,6 +339,15 @@ p.album{
     border-bottom: 1px solid white;
     font-weight: bold;
 }
+.reproductor{
+    margin-bottom: 15px;
+    margin-right: 10px;
+    filter: grayscale(100%);
+    position: sticky;
+    bottom: 0px;
+  
+   
+}
 .elegidas{
     display: grid;
     grid-template-columns: 23% 23% 23% 23%;
