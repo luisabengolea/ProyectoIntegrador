@@ -21,7 +21,7 @@ window.addEventListener ("load", function(){
        let albumCancion = laCancion.title;
        let imagenCancion = laCancion.album.cover_big
        let añoCancion = laCancion.release_date
-       let tiempoCancion = laCancion.duration + " " + "segundos"
+       let tiempoCancion = laCancion.duration + " " + "segs"
    
 // reemplazo variables en las etiquetas HTML
      let nuevoTitulo = ` 
@@ -46,7 +46,7 @@ window.addEventListener ("load", function(){
     let album = `<p> ` + albumCancion + ` <p> `
     document.querySelector (".albums").innerHTML += album
 
-    let tiempo = ` <p> ` + tiempoCancion + ` </p> `
+    let tiempo = ` <p> ` + tiempoCancion +  ` </p> `
 
     document.querySelector (".minutos").innerHTML += tiempo
 
@@ -54,14 +54,7 @@ window.addEventListener ("load", function(){
 
     document.querySelector (".img").innerHTML += imagenDeLaCancion
 
-    let imagenDeCancion = 
-    `  <img class= "mayer" src=" ` + imagenCancion + ` " alt=""> 
-     <p class="mayer">  ` + artistaCancion + ` </p> ` 
-    document.querySelector (".creditos").innerHTML += imagenDeCancion
-
-           
-        }
-    )
+   
 
     document.querySelector(".heart").addEventListener("click", function() {
         let arrayDeCancionesFavoritas;
@@ -70,8 +63,8 @@ window.addEventListener ("load", function(){
         if (localStorage.getItem("cancionesPreferidas") != null) {
 
             //arrayDeCancionesFavoritas y le voy a agregar el código la cancion
-            arrayDecancionesFavoritas = localStorage.getItem("cancionesPreferidas").split(",")
-            arrayDecancionesFavoritas.push(codigoCancion)
+            arrayDeCancionesFavoritas = localStorage.getItem("cancionesPreferidas").split(",")
+            arrayDeCancionesFavoritas.push(codigoCancion)
         } else {
             //TENGO QUE CREAR UN ARRAY NUEVO CON EL CODIGO DE la cancion
             arrayDeCancionesFavoritas = []
@@ -80,5 +73,5 @@ window.addEventListener ("load", function(){
         
         localStorage.setItem("cancionesPreferidas", arrayDeCancionesFavoritas);
     })
-    
-    })
+})
+})

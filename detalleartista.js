@@ -36,6 +36,8 @@ window.addEventListener ("load", function(){
     ` <img class="img"  src=" ` + fotoArtista + ` " alt=""> `
     document.querySelector (".img").innerHTML += perfilArtista
     } )
+
+   
     
     fetch ("https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/" + codigoArtista + "/top?limit=50" )
     .then(
@@ -57,6 +59,7 @@ window.addEventListener ("load", function(){
         let artistaCancion = cadaCancion.artist.name;
         let albumCancion = cadaCancion.album.title;
         let tiempoCancion = cadaCancion.duration + " " + "segs";
+       
 
         let htmlCanciones = `
         <li>
