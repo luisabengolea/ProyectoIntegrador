@@ -433,6 +433,22 @@ margin-top: 10px;
 .fans{
     margin-left: 25px;
 }
+.heart{
+    margin-left: 15px;
+    height: 40px;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 0px;
+    text-decoration: none;
+    background-color:black;
+    border: none;
+    color: white;
+     }
+
+   .heart:hover{
+    border: 4px pink solid;
+    background-color: rgba(240, 196, 203, 0.5); 
+}
 @media (max-width: 450px){
     .aside{
         display: none;

@@ -36,7 +36,7 @@ window.addEventListener("load", function() {
                     let albumCancion = laCancion.title;
                     let imagenCancion = laCancion.album.cover_big
                     let añoCancion = laCancion.release_date
-                    let tiempoCancion = laCancion.duration + " " + "segundos"
+                    let tiempoCancion = laCancion.duration + " " + "segs"
 
                     // muestro la lista de canciones preferidas
 

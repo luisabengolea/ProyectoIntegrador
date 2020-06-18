@@ -300,11 +300,20 @@ p.album{
    
 }
 .heart{
- margin-left: 15px;
- height: 40px;
- margin-top: 20px;
- text-decoration: none;
-}
+        margin-left: 15px;
+        height: 40px;
+        margin-top: 20px;
+        margin-right: 5px;
+        padding: 0px;
+        text-decoration: none;
+        background-color:black;
+        border: none;
+        color: white;
+         }
+        
+         .heart:hover{
+            border: 4px pink solid;
+            background-color: rgba(240, 196, 203, 0.5); }
 
 
 

@@ -64,7 +64,7 @@ window.addEventListener ("load", function(){
         let htmlCanciones = `
         <li>
             <div class="a">
-                <p class="heart"><i class="fa fa-heart"></i></p>
+                <button class="heart"><i class="fa fa-heart"></i></button>
                 <p class="song"> ` + tituloCancion + ` </p> 
                 <p class="artist"> ` + artistaCancion + ` </p>
                 <p class="albums"> ` + albumCancion + ` </p>
@@ -82,6 +82,22 @@ window.addEventListener ("load", function(){
 
     })
 
+    document.querySelector(".heart").addEventListener("click", function() {
+        let arrayDeCancionesFavoritas;
+        
+        // Me fijo si hay cosas en storage
+        if (localStorage.getItem("cancionesPreferidas") != null) {
 
+            //arrayDeCancionesFavoritas y le voy a agregar el código la cancion
+            arrayDeCancionesFavoritas = localStorage.getItem("cancionesPreferidas").split(",")
+            arrayDeCancionesFavoritas.push(codigoCancion)
+        } else {
+            //TENGO QUE CREAR UN ARRAY NUEVO CON EL CODIGO DE la cancion
+            arrayDeCancionesFavoritas = []
+            arrayDeCancionesFavoritas.push(codigoCancion)
+        }
+        
+        localStorage.setItem("cancionesPreferidas", arrayDeCancionesFavoritas);
+    })
 
     })
