@@ -289,6 +289,14 @@ h3.textoslide2{
     text-decoration: underline overline rgba(204, 146, 156,0.856);;
 }
 
+.reproductor{
+    margin-bottom: 15px;
+    margin-right: 10px;
+    filter: grayscale(100%);
+  
+   
+}
+
 @media (max-width: 450px){
     
 

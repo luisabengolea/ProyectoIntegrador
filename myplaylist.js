@@ -11,6 +11,7 @@ window.addEventListener("load", function() {
 
         //Recorremos el array de favoritos
         for (let i = 0; i < cancionesPreferidas.length; i++) {
+            
 
             // Traigo de Deezer el detalle de cancion que ya lo tenemos 
 
@@ -25,7 +26,7 @@ window.addEventListener("load", function() {
                 function(resultado) {
                     // Acá es donde trabajamos la info 
                 
-                    let laCancion = resultado.data;
+                    let laCancion = resultado;
 
                     let nombreCancion = laCancion.title;
                     let artistaCancion = laCancion.artist.name;
