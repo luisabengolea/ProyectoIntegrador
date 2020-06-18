@@ -316,12 +316,19 @@ justify-content: space-between;
 
 }
 .heart{
-    margin: 0 auto;
-    background-color:rgba(40,41,41,0.7);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
+    margin-left: 15px;
     
-}
+   
+    padding: 0px;
+    text-decoration: none;
+    background-color:black;
+    border: none;
+    color: white;
+     }
+    
+     .heart:hover{
+        border: 4px pink solid;
+        background-color: rgba(240, 196, 203, 0.5); }
 
 .a:hover{
     background-color: rgba(240, 196, 203, 0.5); 
