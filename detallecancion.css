@@ -365,7 +365,6 @@ p.album{
     filter: grayscale(100%);
     position: sticky;
     bottom: 0px;
-  
    
 }
 .elegidas{
@@ -705,6 +704,9 @@ p.album{
         padding-right: 2px;
         margin-right: 5px;
         padding:5px;
+    }
+    .reproductor{
+        width: 200px;
     }
     
 }
