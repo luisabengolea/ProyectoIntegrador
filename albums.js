@@ -36,92 +36,35 @@ window.addEventListener ("load", function(){
     } )
 
    
-    
-    fetch ("https://cors-anywhere.herokuapp.com/https://api.deezer.com/albums/" + codigoAlbum + "/tracks" )
-    .then(
-        function (respuesta){
-            return respuesta.json();
-        }
-    )
-    .then(
-        function(informacionTracks) {
-            
-        let porCancion = informacionTracks.data
-        console.log(informacionTracks)
-       // Trabaja el resultado  y armar variables con los reusltados para tenerlos almacenados 
 
-    for (let i = 0; i < porCancion.length; i ++){
-        const cadaCancion = porCancion[i];
-        let idDeTrack = cadaCancion.data.id
-        let tituloCancion = cadaCancion.data.title;
-        let artistaCancion = cadaCancion.artist.name;
-        let tiempoCancion = cadaCancion.duration + " " + "segs";
-       
+    let canciones = album.tracks.data
+        
+        for (let i = 0; i < canciones.length; i++) {
+            const porCancion = canciones[i];
 
-        let htmlCanciones = `
-        <li>
+            let tituloCancion = porCancion.title
+            let idDeTrack = porCancion.id
+            let artistaCancion = porCancion.artist.name
+            let tiempoCancion = porCancion.duration
+
+            //canciones del album
+            document.querySelector(".items").innerHTML += 
+            `
+            <li>
             <div class="a">
                 <button class="heart"><i class="fa fa-heart"></i></button>
                 <p class="song" <a href= "detallecancion.html?idDeTrack=` + idDeTrack + `" > ` + tituloCancion + ` </p> 
                 <p class="artist"> ` + artistaCancion + ` </p>
-                <p class="albums"> ` + albumCancion + ` </p>
+            
                 <p class="minutos"> ` + tiempoCancion + ` </p>
        
              </div>
         </li>
             `
-     
-        document.querySelector(".items").innerHTML += htmlCanciones
-       
-    }
-
-    let canciones = album.tracks.data
-        
-        for (let i = 0; i < canciones.length; i++) {
-            const element = canciones[i];
-
-            let tracks = element.title
-            let idTrack = element.id
-
-            //canciones del album
-            document.querySelector(".tracks").innerHTML += 
-            `
-            <section>
-                <article class="iconos">
-                    <a href="Tracks.html?idTrack=`+ idTrack +`"> <i class="fas fa-play"></i> </a>
-                </article>
-                
-                <article>
-                    <a href="Tracks.html?idTrack=`+ idTrack +`">`+ tracks +`</a> <h4><a href="Artists.html?idArtista=`+ idArtist +`">`+ nombreArtista +`</a></h4>
-                </article>
-                
-                <article class="iconos">
-                    <i class="fas fa-heart botoncito" idCancion=` + idTrack + `></i>
-                </article>
-            </section>
-            `
+            document.querySelector(".items").innerHTML += htmlCanciones
         }
+
 
     })
-    fetch ("https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/" + codigoArtista + "/top?limit=50"  )
-    .then(
-        function (respuesta) {
-            return respuesta.json ();
-        }
-    )
-
-    .then(
-        function(resultado){
-            console.log(resultado)
-
-            let HTMLReproductorArtista = 
-            `<iframe scrolling="no" frameborder="0" allowTransparency="true" 
-            src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=
-            f0c4cb&layout=dark&size=medium&type=radio&id=artist-` + codigoArtista + `&app_id=1" width="1108" height="90"></iframe>`
-
-            document.querySelector(".reproductor").innerHTML = HTMLReproductorArtista
-        }
-
-    )
-
-    })
+    
+    
