@@ -59,13 +59,14 @@ window.addEventListener ("load", function(){
         let artistaCancion = cadaCancion.artist.name;
         let albumCancion = cadaCancion.album.title;
         let tiempoCancion = cadaCancion.duration + " " + "segs";
-       
+        let trackId = cadaCancion.id
 
         let htmlCanciones = `
         <li>
             <div class="a">
+         
                 <button class="heart"><i class="fa fa-heart"></i></button>
-                <p class="song"> ` + tituloCancion + ` </p> 
+                <a href="detallecancion.html?idDeTrack=` + trackId + `"><p class="song"> ` + tituloCancion + ` </p> </a>
                 <p class="artist"> ` + artistaCancion + ` </p>
                 <p class="albums"> ` + albumCancion + ` </p>
                 <p class="minutos"> ` + tiempoCancion + ` </p>

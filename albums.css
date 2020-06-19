@@ -289,6 +289,8 @@ margin-top: 10px;
 }
 .song{
     padding-bottom: 20px;
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -694,7 +696,7 @@ margin-top: 10px;
 
       .buscador {
         position: relative;
-        width: 90%;
+        width: 85%;
          display: grid;
          grid-template-columns:  70% 2% 2%;
          justify-content: space-around;
@@ -733,6 +735,9 @@ margin-top: 10px;
         padding-right: 2px;
         margin-right: 5px;
         padding:5px;
+    }
+    .reproductor{
+        display: none;
     }
     
 }

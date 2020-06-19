@@ -55,7 +55,7 @@ window.addEventListener ("load", function(){
             <li>
             <div class="a">
                 <button class="heart"><i class="fa fa-heart"></i></button>
-                <p class="song" <a href= "detallecancion.html?idDeTrack=` + idDeTrack + `" > ` + tituloCancion + ` </p> 
+                <a href= "detallecancion.html?idDeTrack=` + idDeTrack + `" > <p class="song"> ` + tituloCancion + ` </p> </a>
                 <p class="artist"> ` + artistaCancion + ` </p>
             
                 <p class="minutos"> ` + tiempoCancion + ` </p>

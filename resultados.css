@@ -358,7 +358,7 @@ li.footer a {
 
       .buscador {
         position: relative;
-        width: 90%;
+        width: 85%;
          display: grid;
          grid-template-columns:  70% 2% 2%;
          justify-content: space-around;

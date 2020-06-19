@@ -674,7 +674,7 @@ p.album{
 
       .buscador {
         position: relative;
-        width: 90%;
+        width: 85%;
          display: grid;
          grid-template-columns:  70% 2% 2%;
          justify-content: space-around;
@@ -715,7 +715,7 @@ p.album{
         padding:5px;
     }
     .reproductor{
-        width: 200px;
+        display: none;
     }
     .albums{
         display: none;
