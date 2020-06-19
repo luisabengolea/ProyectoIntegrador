@@ -126,7 +126,7 @@ window.addEventListener("load",function(){
             let htmlResultadoAlbum = `
          <li>
             <div class="slide">
-                <a href="detalleartista.html?idDeArtista= ` + albumId + ` ">
+                <a href="albums.html?idDeAlbum= ` + albumId + ` ">
                  <img class="imgslide" src="` + albumImg + `" alt="">
                  <div class="uk-position-bottom-center uk-panel"><h3 class="textoslide">` + albumTitle + `</h3></div>
               </a>

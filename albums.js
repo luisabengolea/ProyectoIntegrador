@@ -33,11 +33,11 @@ window.addEventListener ("load", function(){
     let perfilGenero =
     ` <img class="img"  src=" ` + fotoGenero + ` " alt=""> `
     document.querySelector (".img").innerHTML += perfilGenero
-    } )
+   
 
    
 
-    let canciones = album.tracks.data
+    let canciones = albumDetalle.tracks.data
         
         for (let i = 0; i < canciones.length; i++) {
             const porCancion = canciones[i];
@@ -48,7 +48,9 @@ window.addEventListener ("load", function(){
             let tiempoCancion = porCancion.duration
 
             //canciones del album
-            document.querySelector(".items").innerHTML += 
+
+            let nuevoCanciones = 
+            
             `
             <li>
             <div class="a">
@@ -61,9 +63,11 @@ window.addEventListener ("load", function(){
              </div>
         </li>
             `
-            document.querySelector(".items").innerHTML += htmlCanciones
+            document.querySelector(".items").innerHTML += nuevoCanciones
         }
+    } )
 
+  
 
     })
     
