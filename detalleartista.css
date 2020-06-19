@@ -690,7 +690,7 @@ margin-top: 10px;
 
       .buscador {
         position: relative;
-        width: 90%;
+        width: 414px;
          display: grid;
          grid-template-columns:  70% 2% 2%;
          justify-content: space-around;
