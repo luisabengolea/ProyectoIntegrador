@@ -36,7 +36,7 @@ window.addEventListener("load",function(){
             `
         }
 
-         // console.log aca para ver que contiene la infromacion de data de charts 
+// console.log aca para ver que contiene la infromacion de data de charts 
 
        
 
