@@ -4,14 +4,14 @@ window.addEventListener("load", function() {
 
     // Chequeo si hay canciones favoritas en storage
 
-    if(localStorage.getItem("cancionesPreferidas") != null) {
+    if(localStorage.getItem("cancionesPreferidas") != null) { //
 
         // Leemos las favoritas
 
         let cancionesPreferidas = localStorage.getItem("cancionesPreferidas").split(",")
 
         //Recorremos el array de favoritos
-        for (let i = 0; i < cancionesPreferidas.length; i++) {
+        for (let i = 0; i < cancionesPreferidas.length; i++) { //for que recorra mis favoritos y el fetch trae el detalle de la cancion
             
 
             // Traigo de Deezer el detalle de cancion que ya lo tenemos 
@@ -30,7 +30,8 @@ window.addEventListener("load", function() {
                     console.log (resultado)   
                 
                     let laCancion = resultado;
-
+                    
+                    //creo las variables para reemplazar en el html
                     let nombreCancion = laCancion.title;
                     let artistaCancion = laCancion.artist.name;
                     let albumCancion = laCancion.title;
@@ -39,7 +40,7 @@ window.addEventListener("load", function() {
                     let tiempoCancion = laCancion.duration + " " + "segs"
 
                     // muestro la lista de canciones preferidas
-
+                    //reemplazo con la info de deezer y las seleccionadas como preferidas de detalle al nuevo html
                     let htmlNuevaCancion = `
                 
                 <div class="a"> 

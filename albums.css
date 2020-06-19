@@ -501,12 +501,12 @@ margin-top: 10px;
     }
     .especifico{
         display: grid;
-        grid-template-rows: 80px 20px 15px ;
+        grid-template-rows: 60px 10px;
         gap: 0px;
         margin: 0px;
         margin-bottom: 0px;
         margin-top: 0px;
-        margin-left: 25px; 
+        margin-left: 40px; 
         width: 400px;
         padding-left: 0px;
      }
@@ -514,11 +514,11 @@ margin-top: 10px;
          display: none;
      }
      .titulocancion{
-        font-size: 28px;
+        font-size: 15px;
         margin-top: 10px;
-        margin-left: 10px;
+       
         padding-left: 0px;
-        margin: none;
+     
      }
      
     .año{
@@ -575,6 +575,7 @@ margin-top: 10px;
 
     .tituloartista{
         margin-left: 80px;
+        font-size: 20px;
     }
     .referencias{
         display: none;
@@ -587,10 +588,11 @@ margin-top: 10px;
     }
 
    .fans{
-    margin-top: 3px;
+    margin-top: 35px;
     margin-bottom: 3px;
-    margin-left: 100px;
+    margin-left: 80px;
     font-size: 20px;
+    
     
    }
    
