@@ -9,7 +9,7 @@ window.addEventListener("load",function(){
     // nusvador es el campo 
 
     // fetch se usa para pedile a la pagina de deezer info 
-    // dentro del fetch vamos a poner una url que es la api de giphy correpsondiente a lo que queremos y nos devuelve un OBJETO LITERAL 
+    // dentro del fetch vamos a poner una url que es la api de deezer correpsondiente a lo que queremos y nos devuelve un OBJETO LITERAL 
     fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=" + loBuscado + "")
     .then(
         function (respuesta){
@@ -38,10 +38,11 @@ window.addEventListener("load",function(){
 
          // console.log aca para ver que contiene la infromacion de data de charts 
 
-       // Trabaja el resultado  y armar variables con los reusltados para tenerlos almacenados 
+       
 
 
 // el ciclo for me permite repetir esta accion una cantidad de veces y tiene: iniciacion, condicion y paso 
+// va a correr la cantidad de veces como canciones haya, y se vaa trasnformar de uno en uno pero tiene una sintaxis  
 
 // recorre el array de cancinones porque no sabemos cuan tas canciones hay 
         for (let index = 0; index < resultadoBusqueda.length; index++) {
@@ -49,9 +50,10 @@ window.addEventListener("load",function(){
         
 // index se reemplaza por la variable que estamos recorriendo 
 
-// el for recorre el resultado de canciones (array)
+
 
 // aramamos variables que contengan info para poder volver a usarlas 
+
 
             let trackTitle = cadaResultado.title
             let trackArtist = cadaResultado.artist.name
@@ -60,7 +62,7 @@ window.addEventListener("load",function(){
             let duracion = cadaResultado.duration
             let trackId = cadaResultado.id
 
-            // cuando araams la estructura interrumpimos el hipervinculo con la variable iddegif, para que la lea del url 
+    // cuando araams la estructura interrumpimos el hipervinculo con la variable iddegif, para que la lea del url 
             let htmlResultado = `
         <li>
             <div class="slide">
