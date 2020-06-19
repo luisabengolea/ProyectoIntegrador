@@ -1,15 +1,15 @@
 window.addEventListener("load",function(){
     let queryString = new URLSearchParams(location.search)
 
-    //Leer el url y el query string siempre igua
-    // lo que esta entre comillas es lo que esate en el url despues del ?
+    //Leer el url y el query string siempre igual
+
 
     let loBuscado = queryString.get ("buscador");
 
-    // nusvador es el campo 
+
 
     // fetch se usa para pedile a la pagina de deezer info 
-    // dentro del fetch vamos a poner una url que es la api de giphy correpsondiente a lo que queremos y nos devuelve un OBJETO LITERAL 
+    
     fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=" + loBuscado + "")
     .then(
         function (respuesta){
@@ -18,8 +18,7 @@ window.addEventListener("load",function(){
         }
     )
 // PRIMER THEN DESPEMAQUETA LA RTA 
-    //las funciones son la consecuencia del fetch 
-    // el tiempo que carga el url es el tiempo en que tarda en pedir la info y traer la respuesta 
+    
 
 
     
@@ -36,12 +35,11 @@ window.addEventListener("load",function(){
             `
         }
 
-         // console.log aca para ver que contiene la infromacion de data de charts 
+// console.log aca para ver que contiene la infromacion de data de charts 
 
-       // Trabaja el resultado  y armar variables con los reusltados para tenerlos almacenados 
+       
 
 
-// el ciclo for me permite repetir esta accion una cantidad de veces y tiene: iniciacion, condicion y paso 
 
 // recorre el array de cancinones porque no sabemos cuan tas canciones hay 
         for (let index = 0; index < resultadoBusqueda.length; index++) {
@@ -49,9 +47,10 @@ window.addEventListener("load",function(){
         
 // index se reemplaza por la variable que estamos recorriendo 
 
-// el for recorre el resultado de canciones (array)
 
-// aramamos variables que contengan info para poder volver a usarlas 
+
+
+
 
             let trackTitle = cadaResultado.title
             let trackArtist = cadaResultado.artist.name
@@ -60,7 +59,7 @@ window.addEventListener("load",function(){
             let duracion = cadaResultado.duration
             let trackId = cadaResultado.id
 
-            // cuando araams la estructura interrumpimos el hipervinculo con la variable iddegif, para que la lea del url 
+    // cuando araams la estructura interrumpimos el hipervinculo con la variable iddegif, para que la lea del url 
             let htmlResultado = `
         <li>
             <div class="slide">
@@ -71,14 +70,11 @@ window.addEventListener("load",function(){
         </li>
         `
 
-         // desde aca pongo la estuctura que seria de solo como se ve el resultado de canciones , (es un li porque el carrousel es un ul con muchos li)
-                    // aca ya tengo armada esta estructur que se va a repetir siguiendo al cantidad de artistas que haya, 
+         // desde aca pongo la estuctura que seria de solo como se ve el resultado de canciones ,
 
         document.querySelector(".listadoResultados").innerHTML += htmlResultado
             
-             
-           //elijo que parte del html quiero reemplazar (EL UL)
-            // DEJAMOS SOLO EL UL con clase que pusimos que se va a reemplazar automaticamente  
+        
             
         }
 

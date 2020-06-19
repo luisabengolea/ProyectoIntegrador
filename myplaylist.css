@@ -626,7 +626,7 @@ li.footer{
      grid-template-columns:  70% 2% 2%;
      justify-content: space-around;
      background-color: rgba(40,41,41,0.7);
-     margin-left: 20px;
+     margin-left: 10px;
      margin-right: 20px;
      margin-top: 5px;
      border: 0.5px solid white;
