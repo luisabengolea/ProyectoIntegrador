@@ -75,7 +75,32 @@ window.addEventListener ("load", function(){
        
     }
 
+    let canciones = album.tracks.data
+        
+        for (let i = 0; i < canciones.length; i++) {
+            const element = canciones[i];
 
+            let tracks = element.title
+            let idTrack = element.id
+
+            //canciones del album
+            document.querySelector(".tracks").innerHTML += 
+            `
+            <section>
+                <article class="iconos">
+                    <a href="Tracks.html?idTrack=`+ idTrack +`"> <i class="fas fa-play"></i> </a>
+                </article>
+                
+                <article>
+                    <a href="Tracks.html?idTrack=`+ idTrack +`">`+ tracks +`</a> <h4><a href="Artists.html?idArtista=`+ idArtist +`">`+ nombreArtista +`</a></h4>
+                </article>
+                
+                <article class="iconos">
+                    <i class="fas fa-heart botoncito" idCancion=` + idTrack + `></i>
+                </article>
+            </section>
+            `
+        }
 
     })
     fetch ("https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/" + codigoArtista + "/top?limit=50"  )
