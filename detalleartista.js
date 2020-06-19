@@ -100,7 +100,13 @@ window.addEventListener ("load", function(){
 
             document.querySelector(".reproductor").innerHTML = HTMLReproductorArtista
         }
+   
 
-    )
+            let HTMLReproductorArtistaMobile = 
+           
+            `<iframe scrolling='no' frameborder='0' allowTransparency='true' src='https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=f0c4cb&layout=dark&size=medium&type=radio&id=artist-` + codigoArtista + `&app_id=1' width='400' height='90'></iframe></div>`
+            document.querySelector(".embed-container").innerHTML = HTMLReproductorArtistaMobile
+    )     
+}
 
     })

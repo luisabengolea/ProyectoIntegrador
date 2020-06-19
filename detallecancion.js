@@ -65,9 +65,9 @@ window.addEventListener ("load", function(){
        
         }
     )
-
+        
     document.querySelector(".heart").addEventListener("click", function() { //haces el evento onclick en el corazon
-        let arrayDeCancionesFavoritas;
+        let arrayDeCancionesFavoritas; //variable 
         
         // Me fijo si hay cosas en storage
         if (localStorage.getItem("cancionesPreferidas") != null) { // si no hay canciones, hace el array
@@ -79,7 +79,7 @@ window.addEventListener ("load", function(){
             arrayDeCancionesFavoritas.push(codigoCancion) //push agregamos algo que ya existia y le agrego el id
         
         
-        } else {  //si hay canciones, lleva la cancion
+        } else {  //si no hay canciones, crea el array
             //TENGO QUE CREAR UN ARRAY NUEVO CON EL CODIGO DE la cancion
             arrayDeCancionesFavoritas = []
             arrayDeCancionesFavoritas.push(codigoCancion)
