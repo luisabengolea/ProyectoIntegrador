@@ -66,22 +66,26 @@ window.addEventListener ("load", function(){
         }
     )
 
-    document.querySelector(".heart").addEventListener("click", function() {
+    document.querySelector(".heart").addEventListener("click", function() { //haces el evento onclick en el corazon
         let arrayDeCancionesFavoritas;
         
         // Me fijo si hay cosas en storage
-        if (localStorage.getItem("cancionesPreferidas") != null) {
+        if (localStorage.getItem("cancionesPreferidas") != null) { // si no hay canciones, hace el array
+            //array + codigo de la cancion
 
             //arrayDeCancionesFavoritas y le voy a agregar el código la cancion
-            arrayDeCancionesFavoritas = localStorage.getItem("cancionesPreferidas").split(",")
-            arrayDeCancionesFavoritas.push(codigoCancion)
-        } else {
+            
+            arrayDeCancionesFavoritas = localStorage.getItem("cancionesPreferidas").split(",") //split divide el objeto en array
+            arrayDeCancionesFavoritas.push(codigoCancion) //push agregamos algo que ya existia y le agrego el id
+        
+        
+        } else {  //si hay canciones, lleva la cancion
             //TENGO QUE CREAR UN ARRAY NUEVO CON EL CODIGO DE la cancion
             arrayDeCancionesFavoritas = []
             arrayDeCancionesFavoritas.push(codigoCancion)
         }
         
-        localStorage.setItem("cancionesPreferidas", arrayDeCancionesFavoritas);
+        localStorage.setItem("cancionesPreferidas", arrayDeCancionesFavoritas); //storage donde van a guardar los arrays
     })
 
     fetch ("https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/" + codigoCancion )
