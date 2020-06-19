@@ -144,6 +144,10 @@ aside{
          border: 1px solid rgba(255, 255, 255, 0.3);
          color: white;
      }
+
+     .botonbuscador:hover{
+        background-color: rgba(240, 196, 203, 0.5); 
+     }
   
   .buscador .icon {
     position: absolute;

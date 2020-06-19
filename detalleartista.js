@@ -81,5 +81,25 @@ window.addEventListener ("load", function(){
 
 
     })
+    fetch ("https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/" + codigoArtista + "/top?limit=50"  )
+    .then(
+        function (respuesta) {
+            return respuesta.json ();
+        }
+    )
+
+    .then(
+        function(resultado){
+            console.log(resultado)
+
+            let HTMLReproductorArtista = 
+            `<iframe scrolling="no" frameborder="0" allowTransparency="true" 
+            src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=
+            f0c4cb&layout=dark&size=medium&type=radio&id=artist-` + codigoArtista + `&app_id=1" width="1108" height="90"></iframe>`
+
+            document.querySelector(".reproductor").innerHTML = HTMLReproductorArtista
+        }
+
+    )
 
     })

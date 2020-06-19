@@ -382,6 +382,9 @@ margin-top: 10px;
          border: 1px solid rgba(255, 255, 255, 0.3);
          color: white;
      }
+     .botonbuscador:hover{
+        background-color: rgba(240, 196, 203, 0.5); 
+     }
   
   .buscador .icon {
     position: absolute;
@@ -392,12 +395,12 @@ margin-top: 10px;
     padding-bottom: 25px;
   }
   .reproductor{
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     margin-right: 10px;
     filter: grayscale(100%);
     position: sticky;
     bottom: 0px;
-  
+   
 }
   
   .buscador .input-text {

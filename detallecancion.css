@@ -31,6 +31,10 @@ li.footer a {
     
   
   }
+
+  .foot{
+      width: 100%;
+  }
   
 .columnas{
     margin-left: 6px;
@@ -429,6 +433,10 @@ p.album{
          background-color:rgba(40,41,41,0.7);
          border: 1px solid rgba(255, 255, 255, 0.3);
          color: white;
+     }
+
+     .botonbuscador:hover{
+        background-color: rgba(240, 196, 203, 0.5); 
      }
   
   .buscador .icon {
