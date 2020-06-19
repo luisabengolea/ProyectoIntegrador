@@ -29,6 +29,7 @@ li.footer a {
   .logofooter{
     width: 30px ;
     
+  
   }
   
 .columnas{
@@ -360,7 +361,7 @@ p.album{
     font-weight: bold;
 }
 .reproductor{
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     margin-right: 10px;
     filter: grayscale(100%);
     position: sticky;
