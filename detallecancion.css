@@ -530,7 +530,7 @@ p.album{
         display: block;
         color: white;
     }
-    .reproductorMobile{
+    .embed-container{
         display: block;
         margin-bottom: 0px;
         margin-right: 10px;
@@ -739,5 +739,6 @@ p.album{
     .albums{
         display: none;
     }
+    
     
 }

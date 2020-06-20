@@ -105,7 +105,19 @@ window.addEventListener ("load", function(){
             width="1108" height="90"></iframe>`
 
             document.querySelector(".reproductor").innerHTML = HTMLReproductor
+            
+        let HTMLReproductorArtistaMobile = 
+           
+       `<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=false&width=950&height=350&
+       color=f0c4cb&layout=dark&size=medium&type=tracks&id=` + codigoCancion + `&app_id=1"
+       width="400" height="90"></iframe>`
+        document.querySelector(".embed-container").innerHTML = HTMLReproductorArtistaMobile
+        
         }
+       
+       
+            
+            
 
     )
 })
